@@ -1,0 +1,10 @@
+Notizen aus dem Auftrag
+======================
+
+Zielordner: D:/ME4-Development/IT-Projekte/me4-goal-webbuilder/
+Eigenstaendiges CLI, argparse, vier Phasen.
+Ausgabe ist ein JSON-Objekt auf stdout, maschinenlesbar.
+Fehler liefern ok=false und konkrete Warnungen, niemals plausible Fake-Daten.
+Stub-Meldungen enthalten immer das Wort stub.
+Der Build ist die einzige echte Phase, publish und assets sind Stubs.
+Recherche bleibt lokal, weil die externen API-Credentials fehlen.

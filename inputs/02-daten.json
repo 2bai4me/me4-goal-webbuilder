@@ -1,0 +1,19 @@
+{
+  "tool": "me4-goal-webbuilder",
+  "phases": ["research", "assets", "build", "publish"],
+  "stub_phases": ["research", "assets", "publish"],
+  "real_phases": ["build"],
+  "extern": {
+    "firecrawl": "nicht konfiguriert",
+    "higsfield": "nicht konfiguriert",
+    "here_now": "nicht konfiguriert"
+  },
+  "output_contract": {
+    "ok": "boolean",
+    "phase": "string",
+    "stub_used": "array of strings",
+    "outputs": "array of paths",
+    "warnings": "array of strings",
+    "metrics": "object"
+  }
+}

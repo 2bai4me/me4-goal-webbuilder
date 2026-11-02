@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Platzhalter feature-assets.svg">
+  <rect width="1200" height="675" fill="#D1A473"/>
+  <rect x="0" y="470" width="1200" height="205" fill="#8C683F"/>
+  <g fill="#FFFFFF" fill-opacity="0.18">
+    <circle cx="180" cy="150" r="90"/>
+    <circle cx="1010" cy="120" r="140"/>
+    <rect x="420" y="60" width="180" height="180" rx="24" transform="rotate(18 510 150)"/>
+  </g>
+  <text x="600" y="290" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="46" fill="#FFFFFF">Platzhalter</text>
+  <text x="600" y="344" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#FFFFFF" fill-opacity="0.92">feature-assets.svg</text>
+  <text x="600" y="530" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#FFFFFF" fill-opacity="0.9">STUB - keine echte Bildquelle</text>
+  <text x="600" y="572" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.75">sha256:16a9640b07b729cb</text>
+</svg>

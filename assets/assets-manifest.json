@@ -1,0 +1,38 @@
+{
+  "tool": "me4-goal-webbuilder",
+  "version": "0.1.0",
+  "assets": [
+    {
+      "name": "hero.svg",
+      "path": "assets/hero.svg"
+    },
+    {
+      "name": "feature-research.svg",
+      "path": "assets/feature-research.svg"
+    },
+    {
+      "name": "feature-assets.svg",
+      "path": "assets/feature-assets.svg"
+    },
+    {
+      "name": "feature-build.svg",
+      "path": "assets/feature-build.svg"
+    },
+    {
+      "name": "feature-publish.svg",
+      "path": "assets/feature-publish.svg"
+    },
+    {
+      "name": "gallery-1.svg",
+      "path": "assets/gallery-1.svg"
+    },
+    {
+      "name": "gallery-2.svg",
+      "path": "assets/gallery-2.svg"
+    },
+    {
+      "name": "gallery-3.svg",
+      "path": "assets/gallery-3.svg"
+    }
+  ]
+}

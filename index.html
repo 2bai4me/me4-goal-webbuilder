@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ME4 Goal Webbuilder</title>
+  <meta name="description" content="Beispiel-Spezifikation fuer den ME4 /goal Website-Builder. Wird vollstaendig lokal gerendert.">
+  <meta name="generator" content="me4-goal-webbuilder 0.1.0">
+  <meta name="build-stamp" content="2026-11-02 10:22:20">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">ME4 Goal Webbuilder</a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#hero">Start</a></li>
+        <li><a href="#features">Funktionen</a></li>
+        <li><a href="#ablauf">Ablauf</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#sources">Quellen</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="hero" class="section hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h1>Websites bauen - offline, ohne Credentials</h1>
+          <p class="lead">Dieses Beispiel zeigt den kompletten /goal-Build: research, assets, build, publish. Alles laeuft lokal, es werden keine externen APIs angesprochen.</p>
+          <a class="btn" href="#features">Funktionen ansehen</a>
+        </div>
+        <img class="section-image" src="assets/hero.svg" alt="Platzhalter-Grafik fuer den Hero-Bereich" width="1200" height="675" loading="lazy">
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="wrap">
+        <h2>Was das Skelett kann</h2>
+        <ul class="feature-grid">
+        <li class="feature"><img class="feature-icon" src="assets/feature-research.svg" alt="" width="48" height="48" loading="lazy"><h3>Lokale Recherche</h3><p>Liest Markdown, Text und JSON aus dem inputs-Ordner und schreibt research.json.</p></li>
+        <li class="feature"><img class="feature-icon" src="assets/feature-assets.svg" alt="" width="48" height="48" loading="lazy"><h3>Deterministische Assets</h3><p>Erzeugt reproduzierbare Platzhalter-SVGs aus dem Spec - gleicher Name, gleiche Bytes.</p></li>
+        <li class="feature"><img class="feature-icon" src="assets/feature-build.svg" alt="" width="48" height="48" loading="lazy"><h3>Echter Build</h3><p>Rendert HTML, CSS und JS aus Spec und Assets in den dist-Ordner.</p></li>
+        <li class="feature"><img class="feature-icon" src="assets/feature-publish.svg" alt="" width="48" height="48" loading="lazy"><h3>Ehrliches Publishing</h3><p>Veroeffentlicht nichts, schreibt stattdessen eine Anleitung als PUBLISH-STUB.md.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ablauf" class="section text">
+      <div class="wrap">
+        <h2>So laeuft der Build</h2>
+        <div class="prose">
+        <p>Phase research liest nur lokale Dateien. Eine Web-Recherche ist bewusst nicht implementiert, weil die noetigen API-Credentials auf diesem Host fehlen.</p>
+        <p>Phase assets erzeugt Platzhalter-Grafiken. Die Vorlage traegt die Aufschrift STUB, damit nichts als echtes Bild missverstanden wird.</p>
+        <p>Phase build ist die einzige Phase ohne Stub: aus Spec und Assets entstehen eine statische Seite, ein Stylesheet und ein kleines Skript.</p>
+        <p>Phase publish schreibt dist/PUBLISH-STUB.md mit Anleitung und laesst das Internet unangetastet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="wrap">
+        <h2>Platzhalter-Galerie</h2>
+        <div class="gallery-grid">
+        <figure class="gallery-item"><img src="assets/gallery-1.svg" alt="Platzhalter-Grafik Nummer 1" width="1200" height="675" loading="lazy"><figcaption>Platzhalter 1</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/gallery-2.svg" alt="Platzhalter-Grafik Nummer 2" width="1200" height="675" loading="lazy"><figcaption>Platzhalter 2</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/gallery-3.svg" alt="Platzhalter-Grafik Nummer 3" width="1200" height="675" loading="lazy"><figcaption>Platzhalter 3</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="section cta">
+      <div class="wrap">
+        <h2>Jetzt ausprobieren</h2>
+        <p class="lead">Der Befehl unten rendert diese Seite neu - ohne Netzzugriff und ohne Installationsschritt.</p>
+        <a class="btn" href="#sources">Zur Quellenliste</a>
+      </div>
+    </section>
+
+    <section id="sources" class="section sources">
+      <div class="wrap">
+        <h2>Quellen (lokale Dateien)</h2>
+        <ul class="source-list">
+        <li><a href="inputs/00-quellen.md">ME4 Goal Webbuilder - lokale Quellen</a> <span class="meta">md, 680 Bytes</span></li>
+        <li><a href="inputs/01-notizen.txt">Notizen aus dem Auftrag</a> <span class="meta">txt, 473 Bytes</span></li>
+        <li><a href="inputs/02-daten.json">02-daten</a> <span class="meta">json, 508 Bytes</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-text">Erzeugt mit me4-goal-webbuilder - stub-first, ohne externe API-Credentials.</p>
+      <nav class="footer-links" aria-label="Fusszeilen-Links">
+      <ul>
+        <li><a href="README.md">README</a></li>
+        <li><a href="examples/website.spec.json">Spezifikation</a></li>
+      </ul>
+    </nav>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

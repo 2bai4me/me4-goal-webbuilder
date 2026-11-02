@@ -1,0 +1,84 @@
+{
+  "site": {
+    "title": "ME4 Goal Webbuilder",
+    "tagline": "Website-Build-Skelett ohne externe API-Credentials",
+    "description": "Beispiel-Spezifikation fuer den ME4 /goal Website-Builder. Wird vollstaendig lokal gerendert.",
+    "locale": "de-DE",
+    "base_url": "index.html",
+    "author": "ME4 Automation"
+  },
+  "theme": {
+    "primary": "#1d4ed8",
+    "accent": "#0f766e",
+    "background": "#ffffff",
+    "foreground": "#111827",
+    "muted": "#6b7280",
+    "surface": "#f3f4f6",
+    "border": "#d1d5db",
+    "font_family": "system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+  },
+  "nav": [
+    {"label": "Start", "href": "#hero"},
+    {"label": "Funktionen", "href": "#features"},
+    {"label": "Ablauf", "href": "#ablauf"},
+    {"label": "Galerie", "href": "#gallery"},
+    {"label": "Quellen", "href": "#sources"}
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Websites bauen - offline, ohne Credentials",
+      "text": "Dieses Beispiel zeigt den kompletten /goal-Build: research, assets, build, publish. Alles laeuft lokal, es werden keine externen APIs angesprochen.",
+      "image": "hero.svg",
+      "image_alt": "Platzhalter-Grafik fuer den Hero-Bereich",
+      "cta": {"label": "Funktionen ansehen", "href": "#features"}
+    },
+    {
+      "id": "features",
+      "type": "features",
+      "heading": "Was das Skelett kann",
+      "items": [
+        {"title": "Lokale Recherche", "text": "Liest Markdown, Text und JSON aus dem inputs-Ordner und schreibt research.json.", "icon": "feature-research.svg"},
+        {"title": "Deterministische Assets", "text": "Erzeugt reproduzierbare Platzhalter-SVGs aus dem Spec - gleicher Name, gleiche Bytes.", "icon": "feature-assets.svg"},
+        {"title": "Echter Build", "text": "Rendert HTML, CSS und JS aus Spec und Assets in den dist-Ordner.", "icon": "feature-build.svg"},
+        {"title": "Ehrliches Publishing", "text": "Veroeffentlicht nichts, schreibt stattdessen eine Anleitung als PUBLISH-STUB.md.", "icon": "feature-publish.svg"}
+      ]
+    },
+    {
+      "id": "ablauf",
+      "type": "text",
+      "heading": "So laeuft der Build",
+      "body": [
+        "Phase research liest nur lokale Dateien. Eine Web-Recherche ist bewusst nicht implementiert, weil die noetigen API-Credentials auf diesem Host fehlen.",
+        "Phase assets erzeugt Platzhalter-Grafiken. Die Vorlage traegt die Aufschrift STUB, damit nichts als echtes Bild missverstanden wird.",
+        "Phase build ist die einzige Phase ohne Stub: aus Spec und Assets entstehen eine statische Seite, ein Stylesheet und ein kleines Skript.",
+        "Phase publish schreibt dist/PUBLISH-STUB.md mit Anleitung und laesst das Internet unangetastet."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "heading": "Platzhalter-Galerie",
+      "items": [
+        {"image": "gallery-1.svg", "caption": "Platzhalter 1", "alt": "Platzhalter-Grafik Nummer 1"},
+        {"image": "gallery-2.svg", "caption": "Platzhalter 2", "alt": "Platzhalter-Grafik Nummer 2"},
+        {"image": "gallery-3.svg", "caption": "Platzhalter 3", "alt": "Platzhalter-Grafik Nummer 3"}
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "heading": "Jetzt ausprobieren",
+      "text": "Der Befehl unten rendert diese Seite neu - ohne Netzzugriff und ohne Installationsschritt.",
+      "cta": {"label": "Zur Quellenliste", "href": "#sources"}
+    }
+  ],
+  "footer": {
+    "text": "Erzeugt mit me4-goal-webbuilder - stub-first, ohne externe API-Credentials.",
+    "links": [
+      {"label": "README", "href": "README.md"},
+      {"label": "Spezifikation", "href": "examples/website.spec.json"}
+    ]
+  }
+}
